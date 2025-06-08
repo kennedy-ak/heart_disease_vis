@@ -1,0 +1,35 @@
+Column Name    ,Description                                 ,Nullable ,Type        ,Data Type ,Sample Value         ,Contains Imputed Values
+Entity         ,Country or region name                      ,No       ,Main Data   ,string    ,Afghanistan          ,False
+age            ,Age group                                   ,No       ,Main Data   ,string    ,All Ages             ,False
+cause          ,Type of heart disease                       ,No       ,Main Data   ,string    ,Cardiovascular diseases,False
+Year           ,Year of observation                         ,No       ,Main Data   ,integer   ,1980                 ,False
+valprevnumberboth,Total prevalence count for both genders   ,Yes       ,Disease Metrics,float     ,687223.91            ,False
+valdeathsnumberboth,Total deaths count for both genders     ,Yes      ,Disease Metrics,float     ,52184.06             ,False
+valprevrateboth,Prevalence rate per 100k for both genders   ,Yes      ,Disease Metrics,float     ,6911.31              ,False
+valdeathsrateboth,Death rate per 100k for both genders      ,Yes      ,Disease Metrics,float     ,388.48               ,False
+valprevpercentboth,Prevalence percentage for both genders   ,Yes      ,Disease Metrics,percent   ,0.0700               ,False
+valdeathspercentboth,Death percentage for both genders      ,Yes      ,Disease Metrics,percent   ,0.1806               ,False
+valprevnumberfemale,Total prevalence count for females     ,Yes     ,Gender Metrics ,float     ,269970.69            ,False
+valdeathsnumberfemale,Total deaths count for females        ,Yes       ,Gender Metrics ,float     ,19608.30             ,False
+valprevratefemale,Prevalence rate per 100k for females     ,Yes     ,Gender Metrics ,float     ,5299.19              ,False
+valdeathsratefemale,Death rate per 100k for females        ,Yes      ,Gender Metrics ,float     ,301.38               ,False
+valprevpercentfemale,Prevalence percentage for females     ,Yes      ,Gender Metrics ,percent   ,0.0538               ,False
+valdeathspercentfemale,Death percentage for females        ,Yes      ,Gender Metrics ,percent   ,0.1500               ,False
+valprevnumbermale,Total prevalence count for males        ,Yes       ,Gender Metrics ,float     ,417253.22            ,False
+valdeathsnumbermale,Total deaths count for males           ,Yes       ,Gender Metrics ,float     ,32575.76             ,False
+valprevratemale,Prevalence rate per 100k for males        ,Yes       ,Gender Metrics ,float     ,8605.12              ,False
+valdeathsratemale,Death rate per 100k for males           ,Yes       ,Gender Metrics ,float     ,470.31               ,False
+valprevpercentmale,Prevalence percentage for males        ,Yes       ,Gender Metrics ,percent   ,0.0870               ,False
+valdeathspercentmale,Death percentage for males           ,Yes       ,Gender Metrics ,percent   ,0.2066               ,False
+Code           ,Country code                                ,Yes      ,Main Data   ,string    ,AFG                  ,False
+gdp_pc         ,GDP per capita                              ,Yes      ,Risk Factor ,float     ,1280.46              ,True
+WB_Income      ,World Bank Income Classification            ,Yes      ,Main Data   ,string    ,Low-income countries ,True
+ct_units       ,CT scanner units per million population     ,Yes      ,Risk Factor ,float     ,0.19                 ,True
+obesity%       ,Percentage of population with obesity       ,Yes      ,Risk Factor ,percent   ,1.3                  ,True
+pacemaker_1m   ,Pacemaker implants per 1 million population ,Yes      ,Risk Factor ,float     ,107.9                ,True
+Population     ,Total population                            ,Yes      ,Main Data   ,integer   ,12045664             ,True
+region         ,Geographic region                           ,Yes      ,Main Data   ,string    ,South Asia           ,True
+t_htn_ctrl     ,Hypertension control rate                   ,Yes      ,Risk Factor ,float     ,23.4                 ,True
+t_high_bp_30-79,Prevalence of high blood pressure (ages 30-79),Yes,Risk Factor,float,31.2,True
+t_htn_diag     ,Hypertension diagnosis rate                 ,Yes      ,Risk Factor ,float     ,52.1                 ,True
+t_htn_rx_30-79 ,Hypertension treatment rate (ages 30-79)    ,Yes      ,Risk Factor ,float     ,47.3                 ,True
