@@ -174,10 +174,14 @@ def toggle_navbar_collapse(n, is_open):
 # chatbot.register_callbacks(app)
 
 if __name__ == "__main__":
-    app.run(debug=True,
-        # debug=True,
-        # host="0.0.0.0",
-        # port=int(os.environ.get("PORT", 8080)),
-        # dev_tools_hot_reload=True,
-        # dev_tools_ui=True,
+    # Get port from environment variable (Cloud Run sets this automatically)
+    port = int(os.environ.get("PORT", 8080))
+    
+    # Configure for production deployment
+    app.run_server(
+        debug=False,  # Disable debug mode in production
+        host="0.0.0.0",  # Listen on all interfaces
+        port=port,  # Use the port provided by the environment
+        dev_tools_hot_reload=False,  # Disable hot reload in production
+        dev_tools_ui=False,  # Disable dev tools UI in production
     )
