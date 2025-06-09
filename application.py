@@ -23,6 +23,7 @@ FA = "https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 # csv_file = os.getenv("csv_file")
 csv_file =  "data/heart_disease_data.csv"
 data_dict = "data/data_dictionary.csv"
+# data_dict = os.getenv("data_dict", data_dict)
 data_dict = os.getenv("data_dict")
 open_api_key = os.getenv("open_api_key")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
